@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+  div.playlist
+    ul
+      - for (var i = 0; i < list.length; i++) {
+        li #{list[i].title}
+          a(target="_blank" href="https://www.youtube.com/watch?v=" + list[i].youtubeID)
+            img(src="http://img.youtube.com/vi/" + list[i].youtubeID + "/0.jpg")
+      - }
+    
+
+
+  script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+  script(type="application/javascript" src="https://cdn.socket.io/socket.io-1.3.5.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+  script(src="/javascripts/jquery.mobile.events.js")
+  script(src="/javascripts/search.js")

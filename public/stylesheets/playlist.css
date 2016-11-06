@@ -1,0 +1,16 @@
+.playlist{
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px;
+}
+.playlist li{
+  color: #fff;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px #999 solid;
+}
+.playlist li a{
+  display: block;
+  margin-top: 10px;
+}

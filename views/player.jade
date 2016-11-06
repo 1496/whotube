@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+	div#player
+	div#commentLayer
+	div#messageLayer
+		div.message-inner
+			p.text
+
+	div#like-layer
+		p.text
+			i.fa.fa-thumbs-up
+				span
+
+
+	script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+	script(type="application/javascript" src="https://cdn.socket.io/socket.io-1.3.5.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+	script(src="/javascripts/jquery.mobile.events.js")
+	script(src="https://www.youtube.com/iframe_api")
+	script(src="/javascripts/player.js")

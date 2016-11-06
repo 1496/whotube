@@ -1,0 +1,63 @@
+extends layout
+
+block content
+  div.message
+    div.success
+      div.wrap
+        p.img
+          img(src="http://img.youtube.com/vi/l-FVcE7BJOs/0.jpg")
+        p.text 動画を投稿しました
+  
+  div.nowPlay.off
+    p.text 
+      i.fa.fa-youtube-play 
+        span.animate 再生中の動画のタイトルが表示されます。
+    div.nowPlay-inner
+      p.image
+        img(src="")
+      p.bt.like
+        i.fa.fa-thumbs-o-up  いいね
+      p.bt.dislike 
+        i.fa.fa-thumbs-o-down  次行ってみよう、、
+        //- i.fa-hand-paper-o 次行ってみよう、、
+
+
+  div.Wrapper
+    div.search-wrap
+      div.bt-layer
+      h1
+        img(src="/images/logo.png")
+      input.search-box(type="text" value="")
+      //- input.search-box(type="text" value="tycho")
+      p.btn-search
+        i.fa.fa-search
+    
+      div.List
+       ul
+        p.default-text
+          i.fa.fa-hand-scissors-o <br>好きな動画ならなんでもOK！<br>遠慮無く適当に投稿しよう！
+
+       
+       
+       
+    // ---------------------   
+    div.detail-wrap
+      //- div.bt-back 
+        //- span 
+          //- i.fa.fa-arrow-left 検索画面へ戻る
+      div.detail-inner
+        p.title
+        div.movie
+          //- iframe(width="100%" frameborder="0" src="https://www.youtube.com/embed/GVtk0tjGX8k?showinfo=0")
+        p.btn-send
+          i.fa.fa-upload 
+          br
+          この動画を投稿する
+        div.description
+      
+
+  script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+  script(type="application/javascript" src="https://cdn.socket.io/socket.io-1.3.5.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+  script(src="/javascripts/jquery.mobile.events.js")
+  script(src="/javascripts/search.js")
